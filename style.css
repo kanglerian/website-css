@@ -136,6 +136,16 @@ table {
     border-spacing: 0;
 }
 
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-color: salmon;
+    z-index: 99999;
+}
+
 body {
     background-color: #DEF0FF;
     font-family: Arial, Helvetica, sans-serif;
@@ -144,10 +154,23 @@ body {
 
 .container {
     width: 960px;
-    margin: auto;
+    margin: 80px auto;
     background-color: #FFFFFF;
     border-radius: 1em;
     transition: 300ms;
+    position: relative;
+}
+
+.twitter {
+    width: 200px;
+    height: 200px;
+    background-image: url(img/twit.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -99999px;
+    position: absolute;
+    top: -22px;
+    right: -27px
 }
 
 .container:hover {
